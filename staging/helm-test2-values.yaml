@@ -1,0 +1,5 @@
+piVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: helm-test2
+  namespace: helm-test2
