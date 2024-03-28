@@ -1,0 +1,12 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: helm-test2
+  namespace: helm-test2
+spec:
+  interval: 1m
+  ref:
+    branch: main
+  url: https://github.com/GitHubforGitLab/helm-test2
+  secretRef:
+    name: helm-test2
