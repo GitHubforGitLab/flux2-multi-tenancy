@@ -3,3 +3,7 @@ kind: HelmRelease
 metadata:
   name: helm-test2
   namespace: helm-test2
+spec:
+  chart:
+    spec:
+      version: ">=1.0.0"
