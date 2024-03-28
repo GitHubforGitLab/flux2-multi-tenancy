@@ -1,0 +1,16 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta2
+kind: HelmRelease
+metadata:
+  name: helm-test2
+  namespace: helm-test2
+spec:
+  serviceAccountName: helm-test2
+  chart:
+    spec:
+      chart: ./mychart2
+      reconcileStrategy: Revision
+      sourceRef:
+        kind: GitRepository
+        name: helm-test2
+        namespace: helm-test2
+  interval: 1m
