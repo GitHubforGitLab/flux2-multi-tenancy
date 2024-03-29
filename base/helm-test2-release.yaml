@@ -11,6 +11,6 @@ spec:
       reconcileStrategy: Revision
       sourceRef:
         kind: GitRepository
-        name: helm-test2
+        name: helm-test2-1
         namespace: helm-test2
   interval: 1m
