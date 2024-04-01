@@ -2,9 +2,9 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: helm-test2
-  namespace: helm-test2
+  namespace: flux-system
 spec:
-  serviceAccountName: helm-test2
+  serviceAccountName: kustomize-controller
   chart:
     spec:
       chart: ./mychart2
