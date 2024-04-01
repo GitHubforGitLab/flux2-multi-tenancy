@@ -4,7 +4,7 @@ metadata:
   name: helm-test2
   namespace: helm-test2
 spec:
-  serviceAccountName: kustomize-controller
+  serviceAccountName: helm-test2
   chart:
     spec:
       chart: ./mychart2
